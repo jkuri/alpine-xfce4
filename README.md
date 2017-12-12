@@ -2,6 +2,14 @@
 
 Simple and minimal Docker image providing Xfce4 Desktop and VNC server.
 
+#### Configuration
+
+To set up remote X framebuffer display resolution open `Dockerfile` and edit 
+
+```sh
+ENV RESOLUTION 1920x1080x24
+```
+
 #### Build Image
 
 ```sh
