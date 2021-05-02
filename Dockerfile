@@ -1,9 +1,9 @@
-FROM alpine:edge
+FROM alpine:latest
 
-LABEL maintainer="Jan Kuri <jan@bleenco.com>"
+LABEL maintainer="Jan Kuri <jkuri88@gmail.com>"
 
 ENV DISPLAY :99
-ENV RESOLUTION 1920x1080x24 
+ENV RESOLUTION 1920x1080x24
 
 RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories \
     && apk add --no-cache ca-certificates curl openssl sudo xvfb x11vnc xfce4 faenza-icon-theme bash \
